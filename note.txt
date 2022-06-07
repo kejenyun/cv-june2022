@@ -1,0 +1,94 @@
+use favicon link to draw a icon for your website
+https://www.favicon.cc/
+
+##The box model -- use chrome developer tool.
+height
+padding
+border
+margin
+
+##CSS display property
+display: Block -->(ex: headers <h1-h6>, paragraph <p>, Divisions<div>, Lists and list items(<ol>,<ul>,and<li>), forms<form>)
+display: Inline -->  only takes up enough space(width) as it need to be (<span>, <img> image element,<a> ancker element for hyperlink)
+display: Inline-Block --> take more space but stay in the same block
+display: None --> make one item disappear ( similar to visibility: hidden;)
+
+- using <span></span> to edit part of the text2 for paragraph <p>text1 <span>text2</span> text3</p>
+
+change display property between block, Inline, Inline-block, none (to hide the element)
+
+p{
+  display: inline;
+}
+
+span{
+  display: block;
+}
+
+display: none; (move the position of other elements)
+visibility: hidden;
+
+
+## CSS static and Relative Positioning
+1. Content matters, the height and width is predetermined
+2. Oder comes from HTML code
+3. Children sit on Parents - there are 3 layers- span is on the top, then h1 then div
+<div>
+<h1>a <span>pro</span>grammer</h1>
+</div>
+
+Position & Coordinates
+
+position: static; --> go along with HTML default rules.
+position: relative; --> position an element relative to HTML default position
+position: Absolute; --> position an element relative to the parent position
+position: fixed; -->
+
+Coordinates (session 384)
+top: 30 px; --> move 30 px away from the default top, means move image down
+bottom: 30 px; --> move 30 px away from the default bottom, means move image up
+left: 30 px; --> move 30 px away from the default left, means move image right
+right: 30 px; --> move 30 px away from the default left, means move image left
+
+
+###Center text
+
+use "text-align" center everything inside parent that dosen't have width set.
+body{
+text-align: center;
+}
+
+use "margin : auto" to center item with set width. https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+h1{
+  width:10%
+  margin: 0 auto 0 auto;
+}
+
+## Font style (font-family: serif /sans-serif / monospace(for code text))
+Sometimes, other computers has no font that you choose for, so defult sans-serif is Arial font.
+ex: font-family: "Helvetica Neue",helvetica, verdana(font name), sans-serif(defult type for this font family); https://www.cssfontstack.com/
+(start from the specific font type to the default type font family)
+
+trick: use google font.com to find the fonts that you can embadded on your website https://fonts.google.com/
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+
+## Font size
+1 em = 16 px = 100%
+using dynamic font size unit -->  "em" or ''%' allows the font to scale or reduce base on the web page size, and "em" will inherit parents font size
+px is static font size ; rem also will not inherit parent's property
+but using Zoom will not change
+
+
+## Styling
+
+use "Margin" to create space between to objects
+use float: direction, to make the text wrap next to the image. (Do not use float for positioning)
+use clear, to make sure the text dose not float next to the image
+
+
+## Create nice looking clickable bottom
+https://css3buttongenerator.com/
+
+## more front end code practice
+https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
